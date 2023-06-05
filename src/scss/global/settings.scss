@@ -1,0 +1,20 @@
+ul {
+    @include list-none;
+}
+button {
+    @include button-none;
+    cursor: pointer;
+}
+.ca__map {
+    width: 100%;
+}
+body {
+    margin: 0%;
+}
+.body__container {
+    max-width: 500px;
+    margin: 0 auto;
+    @media (min-width: $tablet__width) {
+        max-width: 900px;
+    }
+}

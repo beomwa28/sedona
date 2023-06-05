@@ -1,0 +1,46 @@
+.main-title {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  /* or 144% */
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
+  margin-bottom: 35px;
+  @media (min-width:  $tablet__width) {
+    line-height: 26px;
+    font-size: 21px;
+    max-width: 520px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+}
+.first-screen__text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* or 150% */
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #333333;
+  max-width: 80vw;
+    margin:0 auto;
+    margin-bottom: 32px;
+    @media (min-width:  $tablet__width) {
+      padding-bottom: 57px;
+    }
+}
+.first-screen__img {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 32px;
+  @media (min-width:  $tablet__width) {
+    margin-bottom: 48px;
+  }
+}

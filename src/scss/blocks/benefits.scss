@@ -1,0 +1,185 @@
+.benefit__text-wrapper {
+  background-color: #81b3d2;
+  padding: 55px 18px 20px 18px;
+  position: relative;
+  &--arrow {
+    &::after {
+      @include defaul-pseudo-element(100%, 37px);
+      background: url(./../../public/img/white\ copy\ 2.svg) no-repeat center
+        center;
+      top: 0px;
+      left: 0px;
+      background-size: contain;
+      @media (min-width: $tablet__width) {
+        content: none;
+      }
+    }
+  }
+  @media (min-width: $tablet__width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.benefit__title {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height, or 144% */
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.benefit__text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.inner-benefit__title {
+  @media (min-width: $tablet__width) {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height, or 144% */
+
+  text-transform: uppercase;
+
+  color: #000000;
+}
+.inner-benefit__text {
+  @media (min-width: $tablet__width) {
+    text-align: center;
+  }
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* or 150% */
+
+  text-transform: uppercase;
+
+  color: #333333;
+}
+
+.inner-benefits {
+  padding: 30px 30px 50px 65px;
+  @media (min-width: $tablet__width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 70px;
+    display: flex;
+  }
+}
+.inner-benefit {
+  @media (min-width: $tablet__width) {
+    padding-top: 100px;
+    text-align: center;
+  }
+  &::after {
+    @media (min-width: $tablet__width) {
+      padding-top: 60px;
+      background-repeat: no-repeat !important;
+      background-size: contain !important;
+      width: 75px;
+      height: 72px;
+     @include centering-width-pseudo-element;
+    }
+    @include defaul-pseudo-element(40px);
+    top: 0;
+    left: -48px;
+  }
+  &:nth-of-type(1) {
+    &::after {
+      background: url(./../../public/img/house.svg);
+    }
+  }
+  position: relative;
+  &:nth-of-type(2) {
+    &::after {
+      background: url(./../../public/img/present.svg);
+    }
+  }
+  &:nth-of-type(3) {
+    &::after {
+      background: url(./../../public/img/burger.svg);
+    }
+  }
+}
+
+.benefit--grey {
+  background-color: #eeeeee;
+  color: #000000;
+  padding: 0px 20px;
+  & .benefit__title {
+    color: #000000;
+  }
+  & .benefit__text {
+    color: #000000;
+    font-weight: 400px;
+    & :last-of-type {
+      margin: 0;
+    }
+  }
+  &:not(:last-of-type) {
+    & .benefit--grey__container {
+      border-bottom: 1px solid #d6d6d6;
+      @media (min-width: $tablet__width) {
+        border-bottom: none;
+      }
+    }
+  }
+}
+.benefit--grey__container {
+  padding: 24px 0px;
+}
+
+.benefit__img {
+  display: block;
+  width: 100%;
+}
+.benefit__wrapper {
+  @media (min-width: $tablet__width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    &--invers {
+      grid-template-columns: 2fr 1fr;
+      & .benefit__text-wrapper {
+        order: 3;
+      }
+    }
+  }
+  
+}
+.tablet__container {
+  @media (min-width: $tablet__width) {
+    display: flex;
+
+  }
+}
+.benefit--grey__container {
+  @media (min-width: $tablet__width) {
+    padding: 40px 33px 62px;
+  }
+}

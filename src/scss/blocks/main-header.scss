@@ -1,0 +1,18 @@
+.main-header__img {
+    position: absolute;
+    top: 0%;
+    @include centering-width-pseudo-element;
+}
+.main-header__button {
+    background: url(./../../public/img/icon-menu.svg.svg);
+    width: 23px;
+    height: 22px;
+    margin-left: auto;
+    display: block;
+    @media (min-width: $tablet__width) {
+        display: none;
+      }
+}
+.main-header {
+    margin: 17px 20px;
+}
