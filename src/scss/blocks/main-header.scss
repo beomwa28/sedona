@@ -1,18 +1,55 @@
 .main-header__img {
-    position: absolute;
-    top: 0%;
-    @include centering-width-pseudo-element;
+  position: absolute;
+  top: 0%;
+  @include centering-width-pseudo-element;
 }
 .main-header__button {
-    background: url(./../../public/img/icon-menu.svg.svg);
-    width: 23px;
-    height: 22px;
-    margin-left: auto;
-    display: block;
-    @media (min-width: $tablet__width) {
-        display: none;
-      }
+  background: url(./../../public/img/icon-menu.svg.svg);
+  width: 23px;
+  height: 22px;
+  margin-left: auto;
+  display: block;
+  @media (min-width: $tablet__width) {
+    display: none;
+  }
 }
 .main-header {
-    margin: 17px 20px;
+  margin: 17px 20px;
+  @media (min-width: $desktop__width) {
+    padding:  18px 90px ;
+}
+}
+.main-header__link {
+  text-decoration: none;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
+  &--active {
+    color: #766357;
+  }
+
+}
+.main-header__list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px;
+    @media (max-width: $mobile__max-width) {
+        gap: 162px;
+        display: none;
+    }
+}
+.main-header__container { 
+display: flex;
+gap: 75px;
+@media (min-width: $desktop__width) {
+    gap: 162px;
+}
 }

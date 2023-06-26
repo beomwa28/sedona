@@ -104,7 +104,7 @@
       background-size: contain !important;
       width: 75px;
       height: 72px;
-     @include centering-width-pseudo-element;
+      @include centering-width-pseudo-element;
     }
     @include defaul-pseudo-element(40px);
     top: 0;
@@ -170,12 +170,10 @@
       }
     }
   }
-  
 }
 .tablet__container {
   @media (min-width: $tablet__width) {
     display: flex;
-
   }
 }
 .benefit--grey__container {

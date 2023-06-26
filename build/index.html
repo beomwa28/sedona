@@ -16,6 +16,26 @@
   <body>
     <div class="body__container">
       <header class="main-header">
+        <ul class="main-header__list">
+          <div class="main-header__container">
+            <li class="main-header__item">
+              <a class="main-header__link main-header__link--active" href="#"
+                >Главная</a
+              >
+            </li>
+            <li class="main-header__item">
+              <a class="main-header__link" href="#">Фото и видео</a>
+            </li>
+          </div>
+          <div class="main-header__container">
+            <li class="main-header__item">
+              <a class="main-header__link" href="#">Форма отзыва</a>
+            </li>
+            <li class="main-header__item">
+              <a class="main-header__link" href="#">Контакты</a>
+            </li>
+          </div>
+        </ul>
         <img class="main-header__img" src="img/logo (1).svg" alt="логотип" />
         <button class="main-header__button">
           <span class="visually-hidden">открытие и скрытие меню</span>
@@ -24,7 +44,8 @@
       <main class="main-content">
         <section class="first-screen">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/Intro.jpg" />
+            <source media="(min-width: 1280px)" srcset="img/Intro.jpg" />
+            <source media="(min-width: 768px)" srcset="img/Intro-tablet.jpg" />
             <img class="first-screen__img" src="img/Frame 7.png" alt="" />
           </picture>
           <h1 class="main-title">
@@ -47,6 +68,10 @@
                   </p>
                 </div>
                 <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="img/photo-city-desktop@1x.jpg"
+                  />
                   <source
                     media="(min-width: 768px)"
                     srcset="img/photo-city@1x.jpg"
@@ -86,7 +111,14 @@
                   </p>
                 </div>
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/photo-bridge@1x.jpg">
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="img/photo-bridge-desktop@1x.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/photo-bridge@1x.jpg"
+                  />
                   <img
                     class="benefit__img"
                     src="img/photo-bridge@1x 1.jpg"
@@ -96,34 +128,34 @@
               </div>
             </li>
             <div class="tablet__container">
-            <li class="benefit benefit--grey">
-              <div class="benefit--grey__container">
-                <h4 class="benefit__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h4>
-                <p class="benefit__text">— №3 —</p>
-                <p class="benefit__text">
-                  ВСЕ интересные места находятся очень близко
-                </p>
-              </div>
-            </li>
-            <li class="benefit benefit--grey">
-              <div class="benefit--grey__container">
-                <h4 class="benefit__title">КРАСИВАЯ ДОРОГА</h4>
-                <p class="benefit__text">— №4 —</p>
-                <p class="benefit__text">
-                  ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!
-                </p>
-              </div>
-            </li>
-            <li class="benefit benefit--grey">
-              <div class="benefit--grey__container">
-                <h4 class="benefit__title">МАЛО ТУРИСТОВ</h4>
-                <p class="benefit__text">— №5 —</p>
-                <p class="benefit__text">
-                  Большинство едет в гранд каньон и толпится там
-                </p>
-              </div>
-            </li>
-          </div>
+              <li class="benefit benefit--grey">
+                <div class="benefit--grey__container">
+                  <h4 class="benefit__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h4>
+                  <p class="benefit__text">— №3 —</p>
+                  <p class="benefit__text">
+                    ВСЕ интересные места находятся очень близко
+                  </p>
+                </div>
+              </li>
+              <li class="benefit benefit--grey">
+                <div class="benefit--grey__container">
+                  <h4 class="benefit__title">КРАСИВАЯ ДОРОГА</h4>
+                  <p class="benefit__text">— №4 —</p>
+                  <p class="benefit__text">
+                    ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!
+                  </p>
+                </div>
+              </li>
+              <li class="benefit benefit--grey">
+                <div class="benefit--grey__container">
+                  <h4 class="benefit__title">МАЛО ТУРИСТОВ</h4>
+                  <p class="benefit__text">— №5 —</p>
+                  <p class="benefit__text">
+                    Большинство едет в гранд каньон и толпится там
+                  </p>
+                </div>
+              </li>
+            </div>
           </ul>
         </section>
         <section class="ca">
