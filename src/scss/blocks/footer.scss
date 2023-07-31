@@ -40,7 +40,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    & path {
+      transition: 0.5s;
+    }
+    &:hover path{
+      fill: $hover__color;
+      transition: 0.5s;
+    }
   }
   & .main-footer__list {
     display: flex;
